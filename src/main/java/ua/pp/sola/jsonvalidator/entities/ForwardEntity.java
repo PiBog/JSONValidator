@@ -1,13 +1,14 @@
 package ua.pp.sola.jsonvalidator.entities;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
 
 @Getter
 @Setter
-public class SpotEntity implements Derivative {
+public class ForwardEntity implements Derivative {
 
     private final String type;
     private String customer;
@@ -21,7 +22,8 @@ public class SpotEntity implements Derivative {
     private String legalEntity;
     private String trader;
 
-    public SpotEntity(){
-        this.type = "Spot";
+    public ForwardEntity(){
+        this.type = "Forward";
     }
+
 }
